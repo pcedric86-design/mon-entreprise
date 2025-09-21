@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        nav { background-color: #333; padding: 1em; }
+        nav a { color: white; margin-right: 1em; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 2em; }
+        form { display: flex; flex-direction: column; max-width: 400px; }
+        input, textarea { margin-bottom: 1em; padding: 0.5em; font-size: 1em; }
+        button { padding: 0.5em; font-size: 1em; background-color: #333; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #555; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h1>Contactez-nous</h1>
+        <form action="#" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+</body>
+</html>
